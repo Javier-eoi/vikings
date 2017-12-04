@@ -33,8 +33,8 @@ var fin = false;
 
 for(var i = 1;i <= limit && !fin;i++)
 {	
-		indexViking = 	randomIntFromInterval(0 vikings.length-1);
-		indexSaxon = 	randomIntFromInterval(0 saxons.length-1);
+		indexViking = 	randomIntFromInterval(0, vikings.length-1);
+		indexSaxon = 	randomIntFromInterval(0, saxons.length-1);
 
 	if (vikings[indexJugador1].health <= vikings[indexJugador2].strength )
 	{
@@ -43,13 +43,13 @@ for(var i = 1;i <= limit && !fin;i++)
 	{
 	 vikings[indexJugador1].health -= vikings[indexJugador2].strength;
 	 vikings[indexJugador1].warcry();
-		console.log(vikings[indexJugador1].name+" ha pegado a " vikings[indexJugador2].name);
+		console.log(vikings[indexJugador1].name + " ha pegado a " + vikings[indexJugador2].name);
 	}
 }
 
 for(var index in vikings)
 {
-	console.log("Vida de: " vikings[index].name+" : " vikings[index].health);
+	console.log("Vida de: " + vikings[index].name + " : " + vikings[index].health);
 }
 
 
